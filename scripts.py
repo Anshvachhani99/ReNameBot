@@ -26,9 +26,9 @@ class Scripted(object):
     ABOUT_TEXT = """
 ╭────[🔅Rᴇɴᴀᴍᴇʀ Bᴏᴛ🔅]───⍟
 │
-├<b>🤖 Bot Name : <a href='http://t.me/Akansha_Rename_bot'>Rename X2 Bot</a></b>
+├<b>🤖 Bot Name : <a href='http://t.me/Akansha_Rename_bot'>Rename Bot</a></b>
 │
-├<b>📢 Channel : <a href='https://t.me/TmkocEpisodeV3'>@TeleRoidGroup</a></b>
+├<b>📢 Channel : <a href='https://t.me/TmkocEpisodeV3'>TmKocEpisodeV3</a></b>
 │
 ├<b>👥 Version : <a href='https://t.me/TmkocEpisodeV3'>0.9.2 beta</a></b>
 │
@@ -40,7 +40,7 @@ class Scripted(object):
 │
 ├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.4</a></b>
 │
-├<b>👨‍💻 Developer : <a href='https://t.me/AakankshaV2bot'>Pred∆tor</a></b>
+├<b>👨‍💻 Developer : <a href='https://t.me/AakankshaV2bot'>Akansha</a></b>
 │
 ├<b>🚸 Powered By : <a href='https://t.me/TmkocEpisodeV3'>@TmkocEpisodeV3</a></b>
 │
