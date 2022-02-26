@@ -102,14 +102,25 @@ async def rename_doc(bot, update):
                 img.resize((320, height))
                 img.save(thumb_image_path, "JPEG")
             c_time = time.time()
-            await bot.send_document(
-            chat_id=update.chat.id,
-            document=new_file_name,
-            thumb=thumb_image_path,
-            caption=description,
-            reply_to_message_id=update.reply_to_message.message_id,
-            progress=progress_for_pyrogram,
-            progress_args=(Scripted.UPLOAD_START, c, c_time))
+            sent_ = await bot.send_document(
+              chat_id=update.chat.id,
+              document=new_file_name,
+              thumb=thumb_image_path,
+              caption=description,
+              reply_to_message_id=update.reply_to_message.message_id,
+              progress=progress_for_pyrogram,
+              progress_args=(Scripted.UPLOAD_START, c, c_time))
+            
+            #--------------LOG CHANNEL [@YashOswalYO]-----------------#
+            if sent_ is not None:
+              if Config.LOGCHANNEL is not None:
+                media = sent_.video or sent_.document
+                await sent_.copy(
+                  chat_id=Config.LOGCHANNEL,
+                  caption=f"`{media.file_name}`\n\nRenamed for : {cb.from_user.mention}",
+                )
+             
+             #------END------#
 
             try:
                 os.remove(the_real_download_location)
