@@ -52,10 +52,7 @@
   },
   "addons": [
     {
-    "plan": "heroku-postgresql",
-      "options": {
-        "version": "12"
-      }
+    "plan": "heroku-postgresql"
     }
   ],
   "buildpacks": [{
