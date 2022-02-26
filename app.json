@@ -29,7 +29,7 @@
       "value": ""
     },
     "LOGCHANNEL": {
-      "description": "Add channel id with -100 /\or/\ channel username without @",
+      "description": "Add channel ",
       "value": ""
     },
     "BANNED_USERS": {
