@@ -28,9 +28,9 @@
       "description": "allow only pre-defined users to use this bot",
       "value": ""
     },
-    "LOGCHANNEL":{
-      "description": "Add channel id with -100 /\or/\ channel username without @ ",
-      "value":""
+    "LOGCHANNEL": {
+      "description": "Add channel id with -100 /\or/\ channel username without @",
+      "value": ""
     },
     "BANNED_USERS": {
       "description": "Banned Unwanted members..",
