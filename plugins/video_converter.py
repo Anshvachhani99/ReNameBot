@@ -125,7 +125,7 @@ async def convert(bot, update):
                 media = sent_.video or sent_.document
                 await sent_.copy(
                   chat_id=Config.LOGCHANNEL,
-                  caption=f"`{media.file_name}`\n\nRenamed for : {m.from_user.mention}",
+                  caption=f"`{media.file_name}`\n\nRenamed for : {cb.from_user.mention}",
                 )
              
              #------END------#
