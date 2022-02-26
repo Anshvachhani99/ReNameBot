@@ -19,6 +19,7 @@ License -> https://github.com/PredatorHackerzZ/RENAMER-BOT/blob/master/LICENSE
 * `AUTH_USERS` Allow only pre-defined users to use this bot
 * `UPDATE_GROUP` Support group username without '@' for help & support
 * `UPDATE_CHANNEL` Updates channel username without '@' for force subscription
+* `LOGCHANNEL` Log channel username withour '@' for logging uploads
 
 ### BOT COMMANDS
 

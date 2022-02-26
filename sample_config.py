@@ -29,3 +29,5 @@ class Config(object):
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
+    
+    LOGCHANNEL = os.getenv('LOGCHANNEL') or None # Add channel id with -100 /\or/\ channel user name without @

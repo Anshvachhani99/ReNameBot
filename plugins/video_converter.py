@@ -103,7 +103,7 @@ async def convert(bot, update):
             img.resize((90, height))
             img.save(thumb_image_path, "JPEG")
             c_time = time.time()
-            await bot.send_video(
+            sent_ = await bot.send_video(
                 chat_id=update.chat.id,
                 video=the_real_download_location,
                 duration=duration,
@@ -119,6 +119,16 @@ async def convert(bot, update):
                     c_time
                 )
             )
+            #--------------LOG CHANNEL [@YashOswalYO]-----------------#
+            if sent_ is not None:
+              if Config.LOGCHANNEL is not None:
+                media = sent_.video or sent_.document
+                await sent_.copy(
+                  chat_id=Config.LOGCHANNEL,
+                  caption=f"`{media.file_name}`\n\nRenamed for : {cb.from_user.mention}",
+                )
+             
+             #------END------#
             try:
                 os.remove(the_real_download_location)
                 #os.remove(thumb_image_path)
