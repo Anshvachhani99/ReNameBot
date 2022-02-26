@@ -46,7 +46,7 @@ class Scripted(object):
 │
 ╰──────[Thanks 😊]───⍟"""
 
-    CUSTOM_CAPTION = "<i>{@TmkocEpisodeV3}</i>"
+    CUSTOM_CAPTION = "<i>Aknaj</i>"
     ACCESS_DENIED = "<b>¥ou Are Banned 🚫</b>"
     BANNED_USER_TEXT = "<i>¥ou are Banned 🚫</i>"
     TRYING_TO_UPLOAD = "<i>Trying to Upload.....</i>"
